@@ -7,13 +7,13 @@ from time import sleep
 from turta_iothat3 import Turta_Photocoupler
 
 #Initialize
-photohocpler = Turta_Photocoupler.PhotocouplerInputs()
+photocoupler = Turta_Photocoupler.PhotocouplerInputs()
 
 try:
     while True:
         #Read photocoupler input states
-        pc1 = photohocpler.read(1)
-        pc2 = photohocpler.read(2)
+        pc1 = photocoupler.read(1)
+        pc2 = photocoupler.read(2)
 
         #Print the readings
         print("Photocoupler 1..: " + ("High." if pc1 else "Low."))

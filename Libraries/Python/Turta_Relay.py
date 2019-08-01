@@ -61,7 +61,7 @@ class RelayController:
         ch (byte): Relay channel (1 or 2)
 
         Returns:
-        bool: Relay state (True of False)"""
+        bool: Relay state (True or False)"""
 
         if (ch == 1):
             return GPIO.input(self.relay1)

@@ -249,7 +249,11 @@ class LightSensor:
     #Initialization
 
     def __init__(self, mode = MODES.ALS_RGB, bypass_int = False):
-        """Initiates the APDS-9960 sensor to get ambient light, RGB light, proximity and gesture data."""
+        """Initiates the APDS-9960 sensor to get ambient light, RGB light, proximity and gesture data.
+        
+        Parameters:
+        mode (MODES): Sensor operating mode (MODES.ALS_RGB is default)
+        pypass_int (bool): Enables checking gesture interrupt without using the interrupt pin (False is default)"""
 
         if mode not in MODES:
             raise ValueError('mode is not a member of MODES.')
@@ -360,9 +364,7 @@ class LightSensor:
         """Sets the sensor mode.
 
         Parameters:
-        ambient_and_rgb_light (bool): Ambient light and RGB light sense
-        proximity (bool): Proximity detection
-        gesture (bool): Gesture recognition"""
+        mode (MODES): Sensor operating mode"""
 
         if mode not in MODES:
             raise ValueError('mode is not a member of MODES.')

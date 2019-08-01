@@ -18,14 +18,14 @@ class DigitalPort(object):
     #Port Pins
     d1, d2, d3, d4 = 21, 22, 23, 24
 
-    def __init__(self, d1In, d2In, d3In, d4In):
+    def __init__(self, d1In = True, d2In = True, d3In = True, d4In = True):
         """Initiates the GPIO pins.
 
         Parameters:
-        d1In (bool): Pin 1 direction (True for input, False for output)
-        d2In (bool): Pin 2 direction (True for input, False for output)
-        d3In (bool): Pin 3 direction (True for input, False for output)
-        d4In (bool): Pin 4 direction (True for input, False for output)"""
+        d1In (bool): Pin 1 direction (True for input, False for output, True is default)
+        d2In (bool): Pin 2 direction (True for input, False for output, True is default)
+        d3In (bool): Pin 3 direction (True for input, False for output, True is default)
+        d4In (bool): Pin 4 direction (True for input, False for output, True is default)"""
 
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
