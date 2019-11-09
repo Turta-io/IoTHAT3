@@ -23,6 +23,7 @@ This directory includes Python libraries for Turta IoT HAT 3.
 The package installer installs other libraries required for IoT HAT 3's operation.
 * We're using 'SMBus' for I2C communication. To install it manually, type 'sudo pip3 install smbus' to the terminal.
 * We're using 'spidev' for SPI communication. To install it manually, type 'sudo pip3 install spidev' to the terminal.
+* We're using 'RPi.GPIO' for GPIO access. To install it manually, type 'pip3 install RPi.GPIO' to the terminal.
 * We're using Python 3 for the libraries and samples.
 
 ## Documentation
